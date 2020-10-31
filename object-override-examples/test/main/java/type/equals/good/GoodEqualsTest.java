@@ -1,13 +1,15 @@
-package main.java.type.equals;
+package main.java.type.equals.good;
 
 import java.util.Stack;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import main.java.type.AbstractDataTypeBean;
+import main.java.type.equals.good.GoodEquals;
 
-public class BadEqualsTest{
+public class GoodEqualsTest {
 
 	private AbstractDataTypeBean type, y, z, notEqual;
 	private String dependencyOne = "This is a test Dependency";
@@ -15,10 +17,10 @@ public class BadEqualsTest{
 
 	@Before
 	public void instantiateTestClasses() {
-		type = new BadEquals(dependencyOne);
-		y = new BadEquals(dependencyOne);
-		z = new BadEquals(dependencyOne);
-		notEqual = new BadEquals(dependencyTwo);
+		type = new GoodEquals(dependencyOne);
+		y = new GoodEquals(dependencyOne);
+		z = new GoodEquals(dependencyOne);
+		notEqual = new GoodEquals(dependencyTwo);
 	}
 
 	@Test
@@ -53,5 +55,4 @@ public class BadEqualsTest{
 	public void isTypeSafe() {
 		Assert.assertEquals(type.equals(new Stack()), false);
 	}
-
 }

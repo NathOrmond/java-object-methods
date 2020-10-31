@@ -1,4 +1,4 @@
-package main.java.type.equals;
+package main.java.type.equals.good;
 
 import main.java.type.AbstractDataTypeBean;
 

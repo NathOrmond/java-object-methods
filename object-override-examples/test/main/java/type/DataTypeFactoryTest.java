@@ -3,12 +3,13 @@ package main.java.type;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import main.java.type.equals.BadEquals;
-import main.java.type.equals.GoodEquals;
-import main.java.type.equals.NotNullSafeEquals;
-import main.java.type.equals.NotSymmetricEquals;
-import main.java.type.equals.NotTransitiveEquals;
-import main.java.type.equals.NotTypeSafeEquals;
+
+import main.java.type.equals.bad.BadEquals;
+import main.java.type.equals.good.GoodEquals;
+import main.java.type.equals.symmetric.NotNullSafeEquals;
+import main.java.type.equals.symmetric.NotSymmetricEquals;
+import main.java.type.equals.symmetric.NotTypeSafeEquals;
+import main.java.type.equals.transitive.NotTransitiveEquals;
 
 public class DataTypeFactoryTest {
 	

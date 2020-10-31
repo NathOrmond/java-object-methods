@@ -1,4 +1,4 @@
-package main.java.type.equals;
+package main.java.type.equals.transitive;
 
 import main.java.type.AbstractDataTypeBean;
 
@@ -10,8 +10,14 @@ public class NotTransitiveEquals extends AbstractDataTypeBean{
 	
 	@Override
 	public boolean equals(Object obj) {
-		//TODO
-		return super.equals(obj);
+		if(!(obj instanceof NotTransitiveEquals)) { 
+			return false;
+		}
+		
+		NotTransitiveEquals compareTo = (NotTransitiveEquals) obj;
+		return compareTo.getData().equals(getData());
 	}
+	
+
 
 }

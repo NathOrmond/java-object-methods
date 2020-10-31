@@ -1,10 +1,11 @@
-package main.java.type.equals;
+package main.java.type.equals.symmetric;
 
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import main.java.type.AbstractDataTypeBean;
+import main.java.type.equals.symmetric.NotSymmetricEquals;
 
 public class NotSymmetricEqualsTest {
 
