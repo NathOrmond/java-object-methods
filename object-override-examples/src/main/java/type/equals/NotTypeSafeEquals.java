@@ -10,8 +10,8 @@ public class NotTypeSafeEquals extends AbstractDataTypeBean{
 	
 	@Override
 	public boolean equals(Object obj) {
-		//TODO
-		return super.equals(obj);
+		NotTypeSafeEquals compareTo = (NotTypeSafeEquals) obj;
+		return super.equals(compareTo);
 	}
 
 }
